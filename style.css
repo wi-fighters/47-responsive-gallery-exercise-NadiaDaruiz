@@ -13,13 +13,13 @@ html {
 }
 
 li {
-  /* ??? */
+  list-style: none;
+  flex: 25%;
 }
 
 /* Layout */
 
 .container {
-  /* ??? */
   max-width: 1600px; /* 4 x image */
 }
 
@@ -40,12 +40,11 @@ h1 {
 
 /* Gallery */
 
-/*
-??? {
-  ???
-  ???
+.gallery ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
-*/
 
 /* Keep image proportions on resize */
 img {
