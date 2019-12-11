@@ -13,7 +13,7 @@ html {
 }
 
 li {
-  /* ??? */
+  list-style: none;
 }
 
 /* Layout */
@@ -40,12 +40,11 @@ h1 {
 
 /* Gallery */
 
-/*
-??? {
-  ???
-  ???
+.gallery ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,400px));
+  gap: 5px;
 }
-*/
 
 /* Keep image proportions on resize */
 img {
@@ -54,35 +53,5 @@ img {
   display: block;
 }
 
-/*
-When there's room for more than 1 column of 400px-wide images,
-change the layout of the gallery to show 2 columns
-*/
-@media screen and (min-width: 400px) {
 
-  ul {
-    /* ??? */
-    /* ??? */
-  }
 
-  li {
-    /* ??? */
-  }
-}
-
-/*
-When there's room for more than 2 columns,
-change the layout of the gallery to show 3 columns
-*/
-@media screen and (min-width: /* ??? */) {
-  li {
-    width: calc(100% / 3);
-  }
-}
-
-/*
-When there's room for more than 3 columns,
-change the layout of the gallery to show 4 columns
-*/
-
-/* ??? Write your own. You got this :) */
