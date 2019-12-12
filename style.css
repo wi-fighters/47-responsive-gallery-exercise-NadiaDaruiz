@@ -19,8 +19,9 @@ li {
 /* Layout */
 
 .container {
-  /* ??? */
+  margin: 0 auto;
   max-width: 1600px; /* 4 x image */
+  display: block;
 }
 
 /* Description */
@@ -42,8 +43,10 @@ h1 {
 
 .gallery ul {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px,400px));
+  grid-template-columns: repeat(auto-fit, minmax(266px,1fr));
+  /* grid-template-columns: repeat(auto-fit, minmax(150px,300px)); */
   gap: 5px;
+  justify-content: center;
 }
 
 /* Keep image proportions on resize */
